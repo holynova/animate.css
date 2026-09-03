@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Animate.css</title>
+  <rect width="64" height="64" rx="12" fill="#f35626"/>
+  <path d="M14 40c8-15 15-22 22-22 6 0 10 4 14 10-5-3-9-4-12-2-4 2-7 7-10 14H14Z" fill="#fff"/>
+</svg>
