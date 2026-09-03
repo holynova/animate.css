@@ -1,24 +1,30 @@
 {
   "name": "animate.css",
-  "version": "3.2.5",  
+  "version": "3.2.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/daneden/animate.css.git"
   },
   "jspm": {
-    "main":"animate.css!",
-    "format":"global",
+    "main": "animate.css!",
+    "format": "global",
     "directories": {
-      "lib":"./"
+      "lib": "./"
     }
-  },  
+  },
+  "scripts": {
+    "build": "grunt && rm -rf dist && mkdir -p dist && cp -R site/. dist/ && cp animate.css animate.min.css dist/ && touch dist/.nojekyll",
+    "build:pages": "pnpm run build"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
-    "grunt-contrib-watch": "~0.5.3",
+    "grunt-cli": "1.5.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.8.0",
-    "load-grunt-tasks": "~0.2.0"
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "~0.2.0",
+    "wrangler": "4.92.0"
   },
   "spm": {
     "main": "./animate.css"

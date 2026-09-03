@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "animate-css",
+  "compatibility_date": "2026-09-03",
+  "account_id": "ef7863c4de93e71c3496f940c8ab4865",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "animate-css.xiaosang.cc",
+      "custom_domain": true
+    }
+  ]
+}

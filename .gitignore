@@ -1,4 +1,7 @@
 .sass-cache
 node_modules/
 .DS_Store
+dist/
 test/
+!site/test/
+!site/test/**
